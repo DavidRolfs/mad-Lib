@@ -8,6 +8,7 @@ namespace MadLib.Objects
     private string _exclamation;
     private string _verb;
     private string _noun;
+    private int _age;
 
     public string GetPerson1()
     {
@@ -56,6 +57,14 @@ namespace MadLib.Objects
     public void SetNoun(string newNoun)
     {
       _noun = newNoun;
+    }
+    public int GetAge()
+    {
+      return _age;
+    }
+    public void SetAge(int newAge)
+    {
+      _age = (newAge * 2);
     }
   }
 }
